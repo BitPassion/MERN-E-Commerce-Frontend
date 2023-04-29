@@ -1,116 +1,70 @@
-# MERN-E-Commerce-Frontend
+# Getting Started with Create React App
 
-MERN-E-Commerce-Frontend is the frontend of an e-commerce web application built with ReactJS,ContextAPI,React-router-dom
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Live Link
+## Available Scripts
 
-You can access the live application at [https://e-shopit.vercel.app/](https://e-shopit.vercel.app/).
+In the project directory, you can run:
 
-## Features
+### `npm start`
 
-- User authentication and authorization(JWT)
-- Admin dashboard for managing products, orders, users and to show statistics
-- Payemnt Gateway
-- Mail Service
-- Forgot Password & Reset Password
-- Product listing and search
-- Product details and reviews
-- Cart management
-- Order history 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Backend
+### `npm test`
 
-The backend of the application is built with NodeJS and ExpressJS and uses a MongoDB database to store the product and user data. The source code for the backend can be found at [https://github.com/Saurabh-8585/MERN-E-Commerce-Backend](https://github.com/Saurabh-8585/MERN-E-Commerce-Backend).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Tech Stack
+### `npm run build`
 
-- MongoDB
-- ReactJS
-- NodeJS
-- ExpressJS
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Installation and Usage
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-To run the application on your local machine, follow these steps:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-1. Clone the repository:
+### `npm run eject`
 
-   ```
-   git clone https://github.com/Saurabh-8585/MERN-E-Commerce-Frontend
-   ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-2. Install the dependencies:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   ```
-   cd MERN-E-Commerce-Frontend
-   npm install
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-3. Start the development server:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-   ```
-   npm start
-   ```
-4. .env variables:
+## Learn More
 
-   ```
-   REACT_APP_LOGIN
-   REACT_APP_REGISTER
-   REACT_APP_GET_USER_DETAILS
-   REACT_APP_UPDATE_USER_DETAILS
-   REACT_APP_DELETE_USER_DETAILS
-   REACT_APP_FORGOT_PASSWORD
-   REACT_APP_RESET_PASSWORD
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   REACT_APP_FETCH_PRODUCT
-   REACT_APP_SEARCH_PRODUCT
-   REACT_APP_PRODUCT_TYPE
-   REACT_APP_PRODUCT_TYPE_CATEGORY
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-   REACT_APP_GET_CART
-   REACT_APP_DELETE_CART
-   REACT_APP_ADD_CART
+### Code Splitting
 
-   REACT_APP_GET_WISHLIST
-   REACT_APP_DELETE_WISHLIST
-   REACT_APP_ADD_WISHLIST
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-   REACT_APP_GET_REVIEW
-   REACT_APP_DELETE_REVIEW
-   REACT_APP_ADD_REVIEW
-   REACT_APP_EDIT_REVIEW
+### Analyzing the Bundle Size
 
-   REACT_APP_GET_KEY
-   REACT_APP_GET_CHECKOUT  
-   REACT_APP_GET_PAYMENTVERIFICATION
-   REACT_APP_GET_PREVIOUS_ORDER
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-   REACT_APP_ADMIN_LOGIN
-   REACT_APP_ADMIN_REGISTER
+### Making a Progressive Web App
 
-   REACT_APP_ADMIN_GET_ALL_USERS
-   REACT_APP_ADMIN_GET_USER
-   REACT_APP_ADMIN_GET_CART
-   REACT_APP_ADMIN_GET_WISHLIST
-   REACT_APP_ADMIN_GET_REVIEW
-   REACT_APP_ADMIN_GET_CHART_DATA
-   REACT_APP_ADMIN_GET_ORDER
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-   REACT_APP_ADMIN_ADD_PRODUCT   
-   REACT_APP_ADMIN_UPDATE_PRODUCT
+### Advanced Configuration
 
-   REACT_APP_ADMIN_DELETE_REVIEW
-   REACT_APP_ADMIN_DELETE_CART
-   REACT_APP_ADMIN_DELETE_WISHLIST
-   REACT_APP_ADMIN_DELETE_PRODUCT
-   ```
-5. Open [http://localhost:3000](http://localhost:3000) in your web browser.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Contributing
+### Deployment
 
-Contributions to the project are welcome. If you find a bug or want to add a new feature, please create a new issue or pull request.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## License
+### `npm run build` fails to minify
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
