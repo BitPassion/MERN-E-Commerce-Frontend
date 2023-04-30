@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# MERN-E-Commerce-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MERN-E-Commerce-Frontend is the frontend of an e-commerce web application built with ReactJS ,Material   UI, ContextAPI,  React-router-dom
 
-## Available Scripts
+## Live Link
 
-In the project directory, you can run:
+You can access the live application at [https://e-shopit.vercel.app/](https://e-shopit.vercel.app/).
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User authentication and authorization(JWT)
+- Admin dashboard for managing products, orders, users and to show statistics
+- Payemnt Gateway
+- Mail Service
+- Forgot Password & Reset Password
+- Product listing and search
+- Product details and reviews
+- Cart management
+- Order history
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Backend
 
-### `npm test`
+The backend of the application is built with NodeJS and ExpressJS and uses a MongoDB database to store the product and user data. The source code for the backend can be found at [https://github.com/Saurabh-8585/MERN-E-Commerce-Backend](https://github.com/Saurabh-8585/MERN-E-Commerce-Backend).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- MongoDB
+- ReactJS
+- NodeJS
+- ExpressJS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the application on your local machine, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```
+   git clone https://github.com/Saurabh-8585/MERN-E-Commerce-Frontend.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install the dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   cd MERN-E-Commerce-Frontend
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```
+   npm start
+   ```
 
-## Learn More
+4. Set up the environment variables by creating a `.env` file in the root directory and adding the following variables::
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
+   REACT_APP_LOGIN=http://localhost:5000/api/auth/login
+   REACT_APP_REGISTER=http://localhost:5000/api/auth/register
+   REACT_APP_GET_USER_DETAILS=http://localhost:5000/api/auth/getuser
+   REACT_APP_UPDATE_USER_DETAILS=http://localhost:5000/api/auth/updateuser
+   REACT_APP_DELETE_USER_DETAILS=http://localhost:5000/api/auth/delete/user
+   REACT_APP_FORGOT_PASSWORD=http://localhost:5000/api/password/forgot-password
+   REACT_APP_RESET_PASSWORD=http://localhost:5000/api/password/reset/password
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   REACT_APP_FETCH_PRODUCT=http://localhost:5000/api/product/fetchproduct
+   REACT_APP_SEARCH_PRODUCT=http://localhost:5000/api/product/search
+   REACT_APP_PRODUCT_TYPE=http://localhost:5000/api/product/fetchproduct/type
+   REACT_APP_PRODUCT_TYPE_CATEGORY_=http://localhost:5000/api/product/fetchproduct/category
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   REACT_APP_GET_CART=http://localhost:5000/api/cart/fetchcart
+   REACT_APP_DELETE_CART=http://localhost:5000/api/cart/deletecart
+   REACT_APP_ADD_CART=http://localhost:5000/api/cart/addcart
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   REACT_APP_GET_WISHLIST=http://localhost:5000/api/wishlist/fetchwishlist
+   REACT_APP_DELETE_WISHLIST=http://localhost:5000/api/wishlist/deletewishlist
+   REACT_APP_ADD_WISHLIST=http://localhost:5000/api/wishlist/addwishlist
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   REACT_APP_GET_REVIEW=http://localhost:5000/api/review/fetchreview
+   REACT_APP_DELETE_REVIEW=http://localhost:5000/api/review/deletereview
+   REACT_APP_ADD_REVIEW=http://localhost:5000/api/review/addreview
+   REACT_APP_EDIT_REVIEW=http://localhost:5000/api/review/editreview
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   REACT_APP_GET_KEY=http://localhost:5000/api/getkey
+   REACT_APP_GET_CHECKOUT=http://localhost:5000/api/checkout
+   REACT_APP_GET_PAYMENTVERIFICATION=http://localhost:5000/api/paymentverification
+   REACT_APP_GET_PREVIOUS_ORDER=http://localhost:5000/api/getPreviousOrders
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   REACT_APP_ADMIN_LOGIN=http://localhost:5000/api/admin/login
+   REACT_APP_ADMIN_REGISTER=http://localhost:5000/api/admin/register
+
+   REACT_APP_ADMIN_GET_ALL_USERS=http://localhost:5000/api/admin/getusers
+   REACT_APP_ADMIN_GET_USER=http://localhost:5000/api/admin/geteuser
+   REACT_APP_ADMIN_GET_CART=http://localhost:5000/api/admin/getcart
+   REACT_APP_ADMIN_GET_WISHLIST=http://localhost:5000/api/admin/getwishlist
+   REACT_APP_ADMIN_GET_REVIEW=http://localhost:5000/api/admin/getreview
+   REACT_APP_ADMIN_GET_CHART_DATA=http://localhost:5000/api/admin/chartdata
+   REACT_APP_ADMIN_GET_ORDER=http://localhost:5000/api/admin/getorder
+
+   REACT_APP_ADMIN_ADD_PRODUCT=http://localhost:5000/api/admin/addproduct
+
+   REACT_APP_ADMIN_UPDATE_PRODUCT=http://localhost:5000/api/admin/updateproduct
+
+
+   REACT_APP_ADMIN_DELETE_REVIEW=http://localhost:5000/api/admin/review
+   REACT_APP_ADMIN_DELETE_CART=http://localhost:5000/api/admin/usercart
+   REACT_APP_ADMIN_DELETE_WISHLIST=http://localhost:5000/api/admin/userwishlist
+   REACT_APP_ADMIN_DELETE_PRODUCT=http://localhost:5000/api/admin/deleteproduct
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your web browser.
+
+## Contributing
+
+Contributions to the project are welcome. If you find a bug or want to add a new feature, please create a new issue or pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
