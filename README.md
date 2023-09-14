@@ -39,7 +39,7 @@ You can access the live application at [https://e-shopit.vercel.app/](https://e-
 
 ## Backend
 
-The backend of the application is built with NodeJS and ExpressJS and uses a MongoDB database to store the product and user data. The source code for the backend can be found at [https://github.com/Saurabh-8585/MERN-E-Commerce-Backend](https://github.com/Saurabh-8585/MERN-E-Commerce-Backend).
+The backend of the application is built with NodeJS and ExpressJS and uses a MongoDB database to store the product and user data. The source code for the backend can be found at [https://github.com/valerii41025/MERN-E-Commerce-Backend](https://github.com/valerii41025/MERN-E-Commerce-Backend).
 
 
 
@@ -50,7 +50,7 @@ To run the application on your local machine, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/Saurabh-8585/MERN-E-Commerce-Frontend.git
+   git clone https://github.com/valerii41025/MERN-E-Commerce-Frontend.git
    ```
 
 2. Install the dependencies:
